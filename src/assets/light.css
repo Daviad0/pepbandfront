@@ -1,0 +1,212 @@
+.error{
+    color: #DB1A1A;
+}
+.success{
+    color: #00BE35;
+}
+.info{
+    color: #1D8BF1;
+}
+.warning{
+    color: #E98C00;
+}
+.white{
+    color: white;
+}
+
+.error-border{
+    border: 2px solid #DB1A1A;
+    border-color: #DB1A1A;
+}
+.success-border{
+    border: 2px solid #00BE35;
+    border-color: #00BE35;
+}
+.info-border{
+    border: 2px solid #1D8BF1;
+    border-color: #1D8BF1;
+}
+.warning-border{
+    border: 2px solid #E98C00;
+    border-color: #E98C00;
+}
+
+.error-bg{
+    background-color: #DB1A1A !important;
+    color: white;
+}
+.success-bg{
+    background-color: #00BE35 !important;
+    color: white;
+}
+.info-bg{
+    background-color: #1D8BF1 !important;
+    color: white;
+}
+.warning-bg{
+    background-color: #E98C00 !important;
+    color: white;
+}
+.main-bg{
+    background-color: #ffcd00 !important;
+    color: white;
+}
+.gray-bg{
+    background-color: #666666 !important;
+    color: white;
+
+}
+.white-bg{
+    background-color: white !important;
+    color: black;
+}
+
+.color-header{
+    background-color: #ffcd00 !important;
+}
+
+.header .account-dot{
+    background-color: white;
+}
+.footer .item{
+    background-color: #666666;
+    color: white;
+}
+
+
+.floating-box{
+    background-color: white;
+}
+
+.button-main{
+    background-color: #ffcd00;
+    color: white;
+}
+.button-alternate{
+    background-color: #666666;
+    color: white;
+}
+.button-text{
+    color: inherit;
+}
+
+.input{
+    border: 2px solid rgba(0,0,0,0.5);
+    border-color: rgba(0,0,0,0.5);
+}
+.input:focus{
+    border: 2px solid #ffcd00;
+    border-color: #ffcd00;
+}
+.input:disabled{
+    background-color: rgba(0,0,0,0.1);
+    border: 2px solid rgba(0,0,0,0.5);
+}
+.input-error{
+    border: 2px solid #DB1A1A;
+    border-color: #DB1A1A;
+}
+.input-valid{
+    border: 2px solid #00BE35;
+    border-color: #00BE35;
+}
+select{
+    background-color: white;
+}
+.select-from-none:first{
+    color: rgba(0,0,0,0.7);
+}
+
+
+
+.message-error{
+    /*#DB1A1A
+    background is slightly transparent*/
+    background-color: rgba(219, 26, 26, 0.2);
+    border-color: #DB1A1A;
+    color: #DB1A1A;
+}
+.message-success{
+    /*#00BE35
+    background is slightly transparent*/
+    background-color: rgba(0, 190, 53, 0.2);
+    border-color: #00BE35;
+    color: #00BE35;
+}
+.message-info{
+    /*1D8BF1
+    background is slightly transparent*/
+    background-color: rgba(29, 139, 241, 0.2);
+    border-color: #1D8BF1;
+    color: #1D8BF1;
+}
+.message-warning{
+    /*E98C00
+    background is slightly transparent*/
+    background-color: rgba(233, 140, 0, 0.2);
+    border-color: #E98C00;
+    color: #E98C00;
+}
+
+.resolve-further{
+    background-color: rgba(0,0,0,0.1);
+}
+
+.resolve-further:hover{
+    border: 2px solid #ffcd00;
+}
+
+
+.slot-empty{
+    background-color: rgba(128, 128, 128, 0.5);
+    /* look as if the slot is embedded into the page */
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+}
+
+.slot-filled{
+    background-color: white;
+    /* look as if the slot is embedded into the page */
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+
+}
+
+.slot-empty-content{
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.slot-empty-button{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgba(128, 128, 128, 0.5);
+}
+
+.slot-empty-button-remove{
+    background-color: rgba(255, 128, 128, 0.5);
+    color: rgba(128, 128, 128, 0.5);
+
+}
+
+
+.checkmark{
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+.checkbox-container:hover input ~ .checkmark{
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+}
+.checkbox-container input:disabled ~ .checkmark{
+    background-color: rgba(0,0,0,0.1);
+}
+.checkbox-container input:checked ~ .checkmark{
+    background-color: #ffcd00;
+}
+
+.dialog-song-selected{
+    border: 2px solid #ffcd00;
+}
+
+.empty-section{
+    background-color: rgba(0,0,0,0.2);
+}
