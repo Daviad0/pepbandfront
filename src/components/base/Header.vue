@@ -94,7 +94,7 @@
                 role: null,
                 images: [],
 
-                alternate: true
+                alternate: false
             }
         },
         methods: {

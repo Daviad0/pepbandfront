@@ -1,0 +1,81 @@
+.role-detail-item{
+    margin: 10px;
+}
+
+.role-details{
+    flex-wrap: wrap;
+}
+
+.role-detail-value{
+    font-weight: bold;
+    resize: none;
+}
+
+.role-item{
+    padding: 15px 0px;
+    border-bottom: 1px dashed #ccc;
+
+}
+
+.role-main-info{
+    margin: 5px;
+}
+
+.role-detail-tag{
+    margin-left:5px;
+    margin-bottom: 2px;
+}
+
+.role-list{
+    height: 100%;
+    overflow-y: auto;
+    flex-wrap: wrap;
+}
+.role-header{
+    margin-bottom: 20px;
+
+}
+.role-footer{
+    margin-top: 20px;
+}
+
+.role-vertical-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: calc(100vh - 100px);
+}
+
+.no-display{
+    display: none;
+}
+
+.error-message{
+    margin-top:5px;
+}
+
+.permission-input{
+    width: 50px;
+}
+
+.message-in-box{
+    margin: 5px 10px;
+    margin-top:10px;
+}
+
+.permissions{
+    border: 2px solid rgba(0,0,0,0.5);
+    padding:10px;
+    border-radius: 8px;
+    max-width: 600px;
+}
+
+.permission{
+    margin: 3px;
+}
+
+.permission-add{
+    margin: 3px;
+    padding: 5px;
+    border-radius: 8px;
+}

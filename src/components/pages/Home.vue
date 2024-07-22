@@ -3,7 +3,7 @@ import Sprawl from '../content/Sprawl.vue';
 </script>
 
 <style>
-@import '../../assets/index.css';
+/* @import '../../assets/index.css'; */
 </style>
 
 <template>

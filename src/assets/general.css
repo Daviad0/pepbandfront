@@ -1,0 +1,696 @@
+*{
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+span{
+    display: block;
+    text-align: center;
+}
+.xlarge{
+    font-size: 36px !important;
+    font-weight: bold;
+}
+.large{
+    font-size: 24px !important;
+    font-weight: bold;
+}
+.medium{
+    font-size: 18px !important;
+    font-weight: bold;
+}
+.small{
+    font-size: 14px !important;
+    font-weight: normal;
+}
+.tiny{
+    font-size: 10px !important;
+    font-weight: normal;
+}
+
+.spacing{
+    margin: 10px;
+}
+.spacing-y{
+    margin: 10px 0px;
+}
+.spacing-x{
+    margin: 0px 10px;
+}
+
+.header{
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    min-height:50px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    z-index: 100;
+}
+
+.banner-message{
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    min-height:20px;
+    padding: 5px 0px;
+    background-color: rgba(255, 206, 0, 0.5);
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+
+.banner-text{
+    color:white;
+}
+
+.corner{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    transition: 0.5s ease all;
+    transform: translateY(10px);
+}
+
+.corner:hover{
+    transform: translate(5px, 0px) scale(1.1);
+    filter: drop-shadow(0px 0px 5px rgba(255, 206, 0, 0.5));
+    -webkit-filter: drop-shadow(0px 0px 5px rgba(255, 206, 0, 0.5));
+    cursor: pointer;
+}
+
+.header .logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.5));
+    -webkit-filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.5));
+    transition: 0.5s ease all;
+}
+
+a .logo:hover{
+    filter: drop-shadow(0px 0px 8px rgba(0,0,0,0.7));
+    -webkit-filter: drop-shadow(0px 0px 8px rgba(0,0,0,0.7));
+}
+
+.header .large-container{
+    display: unset;
+}
+
+.header .small-container{
+    display: none;
+}
+
+.header-expand{
+    overflow-y: none;
+    transition: 0.5s ease all;
+}
+
+.header-expand-hide{
+    max-height: 0px;
+}
+
+.header-expand-show{
+    height: 100px;
+}
+
+@media screen and (max-width: 800px) {
+    .header .large-container{
+        display: none;
+    }
+
+    .header .small-container{
+        display: unset;
+    }
+    
+}
+
+.header .content{
+    margin-left:120px;
+}
+
+.header .option{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 4px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s ease all;
+    text-decoration: none;
+}
+
+.header .option:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+
+.dialog-option .option{
+    display:block;
+    color: black;
+    font-size: 18px;
+    width: 100%;
+    font-weight: bold;
+    margin: 10px 0px;
+    padding: 4px 8px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s ease all;
+    text-decoration: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.dialog-option .option:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+
+.header .account-dot{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    border: 4px solid #ffcd00;
+    border-radius: 50%;
+    transform: translate(20%, -20%);
+    box-shadow: 4px 2px 5px rgba(0,0,0,0.5);
+    transition: 0.5s ease all;
+}
+
+.header .account-dot:hover{
+    transform: translate(15%, -15%) scale(1.1);
+    box-shadow: 8px 4px 5px rgba(0,0,0,0.5);
+    cursor: pointer;
+
+}
+
+
+.error-popup{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s ease all;
+    z-index: 100;
+    padding: 8px 20px;
+    border-radius: 16px 16px 0px 0px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    cursor:pointer;
+}
+
+.error-popup span {
+    color: white;
+}
+
+.error-popup-hidden{
+    transform: translateX(-50%) translateY(100%);
+}
+
+
+.account-dot .role-icon{
+    pointer-events: none;
+}
+
+.mainbody{
+    
+    width: 80%;
+}
+
+.mainbodyoutside{
+    margin-top:80px;
+    width:100%;
+}
+
+.spacing-top{
+    margin-top: 10px;
+}
+.spacing-bottom{
+    margin-bottom: 10px;
+}
+.spacing-left{
+    margin-left: 10px;
+}
+.spacing-right{
+    margin-right: 10px;
+}
+
+.fill{
+    width: 100%;
+    height: 100%;
+}
+
+
+.account-dot span{
+    font-size:60px;
+    color: #ffcd00;
+}
+
+.footer{
+    position: fixed;
+    bottom: 10px;
+    right: 5px;
+}
+
+.footer .item{
+    padding: 6px 12px;
+    border-radius: 32px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0px 5px;
+    cursor:pointer;
+    transition: 0.5s ease all;
+}
+
+.footer .item:hover{
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.7);
+}
+
+.manage{
+    position: fixed;
+    bottom: 10px;
+    left: 5px;
+}
+
+
+.flex{
+    display: flex;
+}
+.center{
+    justify-content: center;
+    align-items: center;
+}
+.apart{
+    justify-content: space-between;
+    align-items: center;
+}
+.start{
+    align-items: start;
+}
+.end{
+    align-items: end;
+}
+.wrap{
+    flex-wrap: wrap;
+
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.floating-box{
+    padding: 10px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    margin:10px;
+}
+
+.heavy-padding{
+    padding: 20px;
+}
+
+.floating-box .title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top:5px;
+}
+
+
+select{
+    border-left: 4px solid !important;
+}
+
+button{
+    cursor: pointer;
+    border:none;
+}
+
+button:hover{
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+}
+button:active{
+    filter: brightness(0.9);
+}
+button:disabled{
+    cursor: not-allowed;
+    filter: opacity(0.5);
+}
+
+.button-main{
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: 0.5s ease all;
+    margin: 0px 5px;
+}
+
+.button-tiny{
+    padding: 4px 6px;
+    border-radius: 4px;
+    transition: 0.5s ease all;
+    margin: 0px 3px;
+}
+
+.button-alternate{
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: 0.5s ease all;
+    margin: 0px 5px;
+}
+
+.button-text{
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.input{
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: 0.5s ease all;
+    margin: 0px 5px;
+}
+.input:hover{
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+}
+.input:focus{
+    outline: none;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+}
+.input:disabled{
+    cursor: not-allowed;
+}
+
+.input-small{
+    padding: 4px 8px;
+    border-radius: 8px;
+    transition: 0.5s ease all;
+    margin: 0px 5px;
+    width: 150px;
+}
+
+.message{
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    margin: 10px 0px;
+}
+.message-content{
+    color:inherit;
+}
+
+.resolve-further{
+    cursor: help;
+    padding: 4px 8px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    transition: 0.5s ease all;
+}
+
+
+.tag-text{
+    padding: 4px 8px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    transition: 0.5s ease all;
+    margin: 0px 5px;
+}
+
+.dialog-parent{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 101;
+    
+}
+
+.dialog-song-container{
+    height: 60vh;
+}
+.dialog-user-container{
+    height: 60vh;
+}
+
+.dialog-show{
+    animation: dialog-blur-in 0.5s ease forwards;
+}
+
+/* create animation to blur in dialog box once added*/
+
+@keyframes dialog-blur-in {
+    from {
+        backdrop-filter: blur(0px);
+        opacity: 0;
+    }
+    to {
+        backdrop-filter: blur(5px);
+        opacity: 1;
+    }
+    
+}
+
+.dialog-hide{
+    animation: dialog-blur-out 0.5s ease forwards;
+}
+
+/* create animation to blur out dialog box once removed*/
+
+@keyframes dialog-blur-out {
+    from {
+        backdrop-filter: blur(5px);
+        opacity: 1;
+    }
+    to {
+        backdrop-filter: blur(0px);
+        opacity: 0;
+    }
+    
+}
+
+.dialog-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 10px;
+}
+.dialog-header span{
+    text-align: left;
+}
+
+.dialog-icon-flex{
+    margin-right:20px;
+}
+
+@media screen and (max-width: 600px) {
+    .dialog-header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .dialog-header span {
+        text-align: center;
+    }
+    .dialog-icon-flex{
+        margin-right:0px;
+    }
+}
+
+
+.dialog-box{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 16px;
+    z-index: 101;
+}
+
+.dialog-information{
+    width:100%;
+    min-width: 40vw;
+    margin: 10px 0px;
+}
+
+
+
+.dialog-icon-dot{
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+}
+.dialog-icon{
+    color: inherit;
+    font-size: 30px;
+}
+
+.dialog-text-content{
+    text-align: left;
+    margin-top:10px;
+    max-height:30vh;
+}
+
+.dialog-buttons{
+    margin-top: 10px;
+}
+
+.dialog-button{
+    margin: 5px;
+}
+
+.dialog-hidden{
+    display: none;
+}
+
+.dialog-detail-item{
+    margin: 5px 10px;
+}
+
+.dialog-details{
+    flex-wrap: wrap;
+}
+
+.dialog-detail-value{
+    font-weight: bold;
+}
+
+.dialog-detail-tag{
+    margin-left:5px;
+    margin-bottom: 2px;
+}
+
+.dialog-user-parent{
+    width: 70vw;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.dialog-song-parent{
+    width: 70vw;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.dialog-user{
+    width: 200px;
+    transition: 0.5s ease all;
+    border: 2px solid transparent;
+}
+
+.dialog-user:hover{
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.7);
+    cursor: pointer;
+}
+
+.dialog-song{
+    transition: 0.5s ease all;
+    width: 200px;
+    border: 2px solid transparent;
+}
+
+.dialog-song:hover{
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.7);
+    cursor: pointer;
+}
+
+
+
+
+.no-display{
+    display: none;
+}
+
+
+
+
+
+
+.checkbox-container{
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width:20px;
+    margin-bottom:24px;
+}
+
+/*
+If the checkbox is disabled, add a greyed out effect
+*/
+
+.checkbox-container input:disabled ~ .checkmark {
+    cursor: not-allowed;
+}
+
+.checkbox-container input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 4px;
+}
+
+
+
+
+
+.empty-section{
+    margin:10px;
+    padding: 14px 18px;
+    border-radius: 8px;
+    max-width: 400px;
+}
+
+.urgent-lottie{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+
+.dialog-form{
+    margin:10px;
+    border: 1px dashed rgba(0,0,0,0.5);
+    padding:10px;
+    border-radius: 8px;
+}
+
+.dialog-image-preview{
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.icon{
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.icon-small{
+    max-width: 20px !important;
+    max-height: 20px !important;
+}
+
+.icon-lottie{
+    width: 40px;
+    height: 40px;
+}

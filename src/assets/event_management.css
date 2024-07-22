@@ -1,0 +1,179 @@
+.splitpage{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+/*
+
+If the screen is smaller than 600px, stack the links on top of each other, instead of next to each other with width 100%
+
+*/
+
+.splitpage .content-left{
+    width: 30%;
+    margin:10px;
+}
+
+.splitpage .content-right{
+    width: 60%;
+    margin:10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .splitpage {
+        flex-direction: column;
+    }
+    .splitpage .content-left{
+        width: 100%;
+        margin: 10px 0px;
+    }
+    .splitpage .content-right{
+        width: 100%;
+        margin: 10px 0px;
+    }
+}
+
+/* 
+Song slot should look like it's going into the page
+*/
+
+.song-slot{
+    border-radius: 8px;
+    padding: 5px;
+    margin: 10px;
+    transition: 0.5s ease all;
+    width: 250px;
+    height: 150px;
+}
+
+.song-slot-name{
+    margin-bottom: 20px;
+}
+
+.song-slot-details{
+    position:relative;
+}
+
+.song-slot-options{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+.song-slot-icon{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+
+.slot-list{
+    margin:10px;
+    border: 1px dashed rgba(0,0,0,0.5);
+    padding:10px;
+    border-radius: 8px;
+}
+
+.form{
+    margin:10px;
+    border: 1px dashed rgba(0,0,0,0.5);
+    padding:10px;
+    border-radius: 8px;
+}
+
+.split-attend-item{
+    margin: 5px 0px;
+}
+
+.split-attend-item .tag-text{
+    border:none;
+    padding-left:0px;
+}
+
+.split-attend-item .material-symbols-rounded{
+    margin: 0px 5px;
+
+}
+
+.event-management-detail-item{
+    margin: 5px 10px;
+}
+
+.event-management-details{
+    flex-wrap: wrap;
+}
+
+.event-management-detail-value{
+    font-weight: bold;
+}
+
+.event-management-item{
+    padding: 15px 0px;
+    border-bottom: 1px dashed #ccc;
+
+}
+
+.event-management-main-info{
+    margin: 5px;
+}
+
+.event-management-detail-tag{
+    margin-left:5px;
+    margin-bottom: 2px;
+}
+
+.event-management-list{
+    height: 100%;
+    overflow-y: auto;
+}
+.event-management-header{
+    margin-bottom: 20px;
+
+}
+
+.event-management-vertical-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: calc(100vh - 100px);
+}
+
+.no-display{
+    display: none;
+}
+
+.error-message{
+    margin-top:5px;
+}
+
+.segment{
+    margin: 10px;
+}
+
+.slot-appear{
+    animation: slot-appear 0.5s ease;
+}
+
+@keyframes slot-appear{
+    0%{
+        opacity: 0;
+        transform: scaleX(0.01)
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.textarea{
+    width: 100%;
+    height: 100px;
+    resize: none;
+}
+
+.icon-preview{
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    margin: 0px 5px;
+}

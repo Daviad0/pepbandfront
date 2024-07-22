@@ -1,0 +1,51 @@
+.config-detail-item{
+    margin: 5px 10px;
+}
+
+.config-details{
+    flex-wrap: wrap;
+}
+
+.config-detail-value{
+    font-weight: bold;
+}
+
+.config-item{
+    padding: 15px 0px;
+    border-bottom: 1px dashed #ccc;
+
+} 
+
+.config-main-info{
+    margin: 5px;
+}
+
+.config-detail-tag{
+    margin-left:5px;
+    margin-bottom: 2px;
+}
+
+.config-list{
+    height: 100%;
+    overflow-y: auto;
+}
+.config-header{
+    margin-bottom: 20px;
+
+}
+
+.config-vertical-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: calc(100vh - 100px);
+}
+
+.no-display{
+    display: none;
+}
+
+.error-message{
+    margin-top:5px;
+}
+
